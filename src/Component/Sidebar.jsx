@@ -6,7 +6,10 @@ function Sidebar({author}){
           <li className="border-l-4 border-[#C9996B] py-2 pl-4">Create</li>
           <li className="border-l-4 border-[#C9996B] py-2 pl-4">Rename</li>
           <li className="border-l-4 border-[#C9996B] py-2 pl-4">Connect</li>
+          <li className="border-l-4 border-[#C9996B] py-2 pl-4">Connect</li>
           <li className="border-l-4 border-[#C9996B] py-2 pl-4">Upload</li>
+          
+
         </ul>
         <p className="mt-auto text-xl">Written by {author}</p>
       </nav>
