@@ -91,6 +91,7 @@ function App() {
         <Section title="Create" description="Creates an empty Git repository in the current folder." command="git init"/>
         <Section title="Rename" description="Sends the main branch to the remote named origin." command="git branch -M main"/>
         <Section title="Upload" description="Creates an empty Git repository in the current folder." command="git push -u origin main"/>
+        <Section title="Connect" description="Links this local project to your forked repository on GitHub, under the name origin." command="git clone https://github.com/markjosephbarino-source/CSIT340-G8-Midterms-Barino.git"/>
       </main>
 
       
