@@ -1,38 +1,36 @@
 function Feedback(){
-    return(
-        <div className="flex items-end justify-between px-20 pt-10">
+    <div className="mx-20 mt-2 flex items-center justify-between self-start rounded-xl bg-[#5C4F4A] p-6 text-[#EDE9E6]>
+
+    <div className="flex items-center gap-4>
+
+        <p className="text-2x1">Was this page helpful?</p>
         
-        <div>
-          <div className="mt-6 flex gap-4">
-            <button
-              className="cursor-pointer rounded-lg bg-[#5C766D] px-8 py-3 text-xl font-bold text-[#EDE9E6]"
+
+
+        <button
+              className="cursor-pointer rounded-lg bg-[#5C766D] px-6 py-2 text-x1 font-bold"
+              onClick={handlNo}
+            >
+              No
+        </button>
+
+         <button
+              className="cursor-pointer rounded-lg bg-[#5C766D] px-6 py-2 text-x1 font-bold"
               onClick={handleYes}
             >
               Yes
-            </button>
-            <button
-              className="cursor-pointer rounded-lg bg-[#C9996B] px-8 py-3 text-xl font-bold text-[#5C4F4A]"
-              onClick={handleNo}
-            >
-              No
-            </button>
-            <button
-              className="cursor-pointer rounded-lg border-2 border-[#5C4F4A] px-8 py-3 text-xl font-bold"
-              onClick={handleReset}
-            >
-              Reset
-            </button>
-            <button
-              className="cursor-pointer rounded-lg bg-[#5C766D] px-8 py-3 text-xl font-bold text-[#EDE9E6]"
+        </button>
+
+        <button
+              className="cursor-pointer rounded-lg bg-[#5C766D] px-6 py-2 text-x1 font-bold"
               onClick={handleClear}
             >
               Clear
-            </button>
-          </div>
-        </div>
-        
-      </div>
+        </button>
 
-    )
+
+
+    </div>
+
 }
 export default Feedback
