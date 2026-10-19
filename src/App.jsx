@@ -4,8 +4,12 @@ import Header from "./Component/Header";
 import Guide from "./Component/Guide";
 import Docs from "./Component/Docs";
 import Section from "./Component/Section";
+import StatCard from "./Component/StatCard";
+import Feedback from "./Component/Feedback";
 
 function App() {
+  const [yes, setYes] = useState(0);
+  const [no, setNo] = useState(0);
   const [read, setRead] = useState(0);
   const [bookmarks, setBookmarks] = useState(0);
 
@@ -22,11 +26,30 @@ function App() {
     setBookmarks(0);
   }
 
+  function handleYes() {
+    setYes(yes + 1);
+  }
+
+  function handleNo() {
+    setNo(no + 1);
+  }
+
+
+  function handleClear() {
+    setYes(0);
+    setNo(0);
+  }
+
   return (
+    
     <div className="grid min-h-screen grid-cols-[24rem_1fr] grid-rows-[auto_auto_1fr] bg-[#EDE9E6] text-[#5C4F4A]">
       <Sidebar author="Mark Barino" />
+      
+      
+
 
       <div className="flex items-end justify-between px-20 pt-10">
+        
         <div>
           <Header />
           <div className="mt-6 flex gap-4">
@@ -61,6 +84,7 @@ function App() {
           </div>
         </div>
       </div>
+
       <Guide />
 
       <main className="px-20 pt-4">
@@ -68,11 +92,13 @@ function App() {
         <Section title="Rename" description="Sends the main branch to the remote named origin." command="git branch -M main"/>
         <Section title="Upload" description="Creates an empty Git repository in the current folder." command="git push -u origin main"/>
       </main>
+
       
       
 
 
     </div>
+    
   );
 }
 
